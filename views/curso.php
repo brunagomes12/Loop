@@ -1,5 +1,3 @@
-<a href="?pagina=inserir_curso">Inserir curso</a>
-
 <table style="border:1px solid #ccc; width: 100%">
   <tr>
     <th>Nome do curso</th>
@@ -18,3 +16,5 @@
     }
   ?>
 </table>
+
+<a class="btn btn-sucess" href="?pagina=inserir_curso">Inserir curso</a>

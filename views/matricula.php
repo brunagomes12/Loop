@@ -1,5 +1,3 @@
-<a href="?pagina=inserir_matricula">Inserir nova matricula</a>
-
 <table style="border:1px solid #ccc; width:100%">
   <tr>
     <th>Nome do aluno</th>
@@ -15,3 +13,5 @@
    }
  ?>
 </table>
+
+<a class="btn btn-sucess" href="?pagina=inserir_matricula">Inserir nova matricula</a>

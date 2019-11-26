@@ -1,4 +1,3 @@
-<a href="?pagina=inserir_professor">Inserir professor</a>
 <br>
 <table style="border:1px solid #ccc; width:100%">
   <tr>
@@ -17,3 +16,4 @@
    }
   ?>
 </table>
+<a class="btn btn-sucess" href="?pagina=inserir_professor">Inserir professor</a>
