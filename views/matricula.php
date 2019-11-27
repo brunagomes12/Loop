@@ -3,7 +3,9 @@
     <tr>
       <th>Nome do aluno</th>
       <th>Nome do curso</th>
+      <th>Editar</th>
       <th>Deletar</th>
+      <th>Visualizar</th>
     </tr>
   </thead>
   <tbody>
@@ -12,9 +14,15 @@
         echo '<tr><td>'.$linha['nome_aluno'].'</td>';
         echo '<td>'.$linha['nome_curso'].'</td>';
     ?>
-     <td><a href="deleta_matricula.php?id_aluno_curso=<?php echo $linha['id_aluno_curso']; ?>">
-       <i class="far fa-trash-alt"></i>
-     </a></td></tr>
+    <td><a>
+      <i class="fas fa-user-edit"></i>
+    </a></td>
+    <td><a href="deleta_matricula.php?id_aluno_curso=<?php echo $linha['id_aluno_curso']; ?>">
+      <i class="fas fa-trash"></i>
+    </a></td>
+    <td><a>
+      <i class="fas fa-eye"></i>
+    </a></td></tr>
    <?php
      }
    ?>

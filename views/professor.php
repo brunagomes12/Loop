@@ -4,9 +4,9 @@
     <tr>
       <th>Nome do professor</th>
       <th>Data de nascimento</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Editar</th>
+      <th>Deletar</th>
+      <th>Visualizar</th>
     </tr>
   </thead>
   <tbody>
@@ -19,14 +19,13 @@
        <i class="fas fa-user-edit"></i>
      </a></td>
      <td><a href="deleta_professor.php?id_professor=<?php echo $linha['id_professor']; ?>">
-       <i class="far fa-trash-alt"></i>
+       <i class="fas fa-trash"></i>
      </a></td>
      <td><a>
        <i class="fas fa-eye"></i>
      </a></td></tr>
-    <?php
+   <?php
      }
-    ?>
-  </tbody>
+   ?>
 </table>
 <a class="btn btn-success" href="?pagina=inserir_professor">Inserir professor</a>

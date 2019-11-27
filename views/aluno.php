@@ -6,6 +6,7 @@
       <th>Data de nascimento</th>
       <th>Editar</th>
       <th>Deletar</th>
+      <th>Visualizar</th>
     </tr>
   </thead>
   <tbody>
@@ -15,10 +16,13 @@
         echo '<td>'.$linha['data_nascimento'].'</td>';
     ?>
      <td><a href="?pagina=inserir_aluno&editar=<?php echo $linha['id_aluno']; ?>">
-      <i class="fas fa-user-edit"></i>
+       <i class="fas fa-user-edit"></i>
      </a></td>
      <td><a href="deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">
-       <i class="far fa-trash-alt"></i>
+       <i class="fas fa-trash"></i>
+     </a></td>
+     <td><a>
+       <i class="fas fa-eye"></i>
      </a></td></tr>
     <?php
      }
