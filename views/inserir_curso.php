@@ -3,13 +3,13 @@
 <form method="post" action="processa_curso.php">
   <br>
   <label>Nome do curso:</label>
-  <input type="text" name="nome_curso" placeholder="Insira o nome do curso">
+  <input type="text" class="form-control" name="nome_curso" placeholder="Insira o nome do curso">
   <br>
   <br>
   <label>Carga horária do curso:</label>
-  <input type="text" name="carga_horaria" placeholder="Insira a carga horária">
+  <input type="text" class="form-control" name="carga_horaria" placeholder="Insira a carga horária">
   <br>
-  <input type="submit" value="Cadastrar curso">
+  <input type="submit" class="btn btn-success" value="Cadastrar curso">
 </form>
 
 <?php } else { ?>
@@ -20,13 +20,13 @@
         <input type="hidden" name="id_curso" value="<?php echo $linha['id_curso']; ?>">
         <br>
         <label>Nome do curso:</label><br>
-        <input type="text" name="nome_curso" placeholder="Insira o nome do curso" value="<?php echo $linha['nome_curso']; ?>">
+        <input type="text" class="form-control" name="nome_curso" placeholder="Insira o nome do curso" value="<?php echo $linha['nome_curso']; ?>">
         <br>
         <br>
         <label>Carga horária do curso:</label><br>
-        <input type="text" name="carga_horaria" placeholder="Insira a carga horária" value="<?php echo $linha['carga_horaria']; ?>">
+        <input type="text" class="form-control" name="carga_horaria" placeholder="Insira a carga horária" value="<?php echo $linha['carga_horaria']; ?>">
         <br><br>
-        <input type="submit" value="Editar curso">
+        <input type="submit" class="btn btn-success" value="Editar curso">
       </form>
     <?php } ?>
   <?php } ?>

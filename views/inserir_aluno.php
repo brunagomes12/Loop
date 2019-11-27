@@ -3,21 +3,21 @@
 <form method="post" action="processa_aluno.php">
   <br>
   <label>Nome do aluno:</label>
-  <input type="text" name="nome_aluno" placeholder="Insira o nome">
+  <input type="text" class="form-control" name="nome_aluno" placeholder="Insira o nome">
   <br>
   <label>CPF:</label>
-  <input type="text" name="cpf" placeholder="Insira o CPF">
+  <input type="text" class="form-control" name="cpf" placeholder="Insira o CPF">
   <br>
   <label>Data de nascimento:</label>
-  <input type="date" name="data_nascimento" placeholder="Insira a data de nascimento">
+  <input type="date" class="form-control" name="data_nascimento" placeholder="Insira a data de nascimento">
   <br>
   <label>Telefone:</label>
-  <input type="text" name="telefone" placeholder="Insira o telefone">
+  <input type="text" class="form-control" name="telefone" placeholder="Insira o telefone">
   <br>
   <label>E-mail:</label>
-  <input type="email" name="email" placeholder="Insira o e-mail">
+  <input type="email" class="form-control" name="email" placeholder="Insira o e-mail">
   <br>
-  <input type="submit" value="Cadastrar aluno">
+  <input type="submit" class="btn btn-success" value="Cadastrar aluno">
 </form>
 
 <?php } else { ?>
@@ -28,21 +28,21 @@
           <input type="hidden" name="id_aluno" value="<?php echo $linha['id_aluno']; ?>">
           <br>
           <label>Nome do aluno:</label>
-          <input type="text" name="nome_aluno" placeholder="Insira o nome" value="<?php echo $linha['nome_aluno']; ?>">
+          <input type="text" class="form-control" name="nome_aluno" placeholder="Insira o nome" value="<?php echo $linha['nome_aluno']; ?>">
           <br>
           <label>CPF:</label>
-          <input type="text" name="cpf" placeholder="Insira o CPF" value="<?php echo $linha['cpf']; ?>">
+          <input type="text" class="form-control" name="cpf" placeholder="Insira o CPF" value="<?php echo $linha['cpf']; ?>">
           <br>
           <label>Data de nascimento:</label>
-          <input type="date" name="data_nascimento" placeholder="Insira a data de nascimento"  value="<?php echo $linha['data_nascimento']; ?>">
+          <input type="date" class="form-control" name="data_nascimento" placeholder="Insira a data de nascimento"  value="<?php echo $linha['data_nascimento']; ?>">
           <br>
           <label>Telefone:</label>
-          <input type="text" name="telefone" placeholder="Insira o telefone" value=" <?php echo $linha['telefone']; ?>">
+          <input type="text" class="form-control" name="telefone" placeholder="Insira o telefone" value=" <?php echo $linha['telefone']; ?>">
           <br>
           <label>E-mail:</label>
-          <input type="email" name="email" placeholder="Insira o e-mail" value=" <?php echo $linha['email']; ?>">
+          <input type="email" class="form-control" name="email" placeholder="Insira o e-mail" value=" <?php echo $linha['email']; ?>">
           <br>
-          <input type="submit" value="Editar aluno">
+          <input type="submit" class="btn btn-success" value="Editar aluno">
         </form>
     <?php } ?>
   <?php } ?>
