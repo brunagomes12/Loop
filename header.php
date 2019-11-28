@@ -18,6 +18,9 @@
         <a href="?pagina=professor">Professores</a>
         <a href="?pagina=quem_somos">Quem Somos</a>
         <a href="?pagina=matricula">Matrículas</a>
+        <?php if (isset($_SESSION['login'])) { ?>
+          <a href="logout.php"><?php echo $_SESSION['usuario']; ?> (sair)</a>
+        <?php } ?>
       </div>
     </div>
   </header>
