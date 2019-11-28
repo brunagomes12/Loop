@@ -7,11 +7,14 @@ include 'database/db.php';
 include 'header.php';
 
 # Conteúdo da página
-
-if(isset($_GET['pagina'])){
-  $pagina = $_GET['pagina'];
-}else{
-  $pagina = 'home';
+if(isset($_SESSION['login'])){
+  if(isset($_GET['pagina'])){
+    $pagina = $_GET['pagina'];
+  }else{
+    $pagina = 'home';
+  }
+} else {
+    $pagina = 'home';
 }
 
 switch ($pagina) {
