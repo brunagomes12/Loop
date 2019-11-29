@@ -18,7 +18,7 @@
      <td><a href="?pagina=inserir_aluno&editar=<?php echo $linha['id_aluno']; ?>">
        <i class="fas fa-user-edit"></i>
      </a></td>
-     <td><a href="deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">
+     <td><a href="models/deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">
        <i class="fas fa-trash"></i>
      </a></td>
      <td><a>

@@ -17,7 +17,7 @@
     <td><a>
       <i class="fas fa-user-edit"></i>
     </a></td>
-    <td><a href="deleta_matricula.php?id_aluno_curso=<?php echo $linha['id_aluno_curso']; ?>">
+    <td><a href="models/deleta_matricula.php?id_aluno_curso=<?php echo $linha['id_aluno_curso']; ?>">
       <i class="fas fa-trash"></i>
     </a></td>
     <td><a>

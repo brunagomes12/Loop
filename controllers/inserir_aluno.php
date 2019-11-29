@@ -1,6 +1,6 @@
 <?php if(!isset($_GET['editar'])){ ?>
 <h1>Inserir novo aluno</h1>
-<form method="post" action="processa_aluno.php">
+<form method="post" action="models/processa_aluno.php">
   <br>
   <label>Nome do aluno:</label>
   <input type="text" class="form-control" name="nome_aluno" placeholder="Insira o nome">
@@ -24,7 +24,7 @@
   <?php while($linha = mysqli_fetch_array($consulta_aluno)){ ?>
     <?php if($linha['id_aluno'] == $_GET['editar']){ ?>
       <h1>Editar aluno</h1>
-        <form method="post" action="edita_aluno.php">
+        <form method="post" action="models/edita_aluno.php">
           <input type="hidden" name="id_aluno" value="<?php echo $linha['id_aluno']; ?>">
           <br>
           <label>Nome do aluno:</label>

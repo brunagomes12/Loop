@@ -37,16 +37,16 @@ switch ($pagina) {
     include 'views/matricula.php';
     break;
   case 'inserir_curso':
-    include 'views/inserir_curso.php';
+    include 'controllers/inserir_curso.php';
     break;
   case 'inserir_aluno':
-    include 'views/inserir_aluno.php';
+    include 'controllers/inserir_aluno.php';
     break;
   case 'inserir_professor':
-    include 'views/inserir_professor.php';
+    include 'controllers/inserir_professor.php';
     break;
   case 'inserir_matricula':
-    include 'views/inserir_matricula.php';
+    include 'controllers/inserir_matricula.php';
     break;
   default:
     include 'views/home.php';

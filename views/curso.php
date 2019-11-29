@@ -18,7 +18,7 @@
       <td><a href="?pagina=inserir_curso&editar=<?php echo $linha['id_curso']; ?>">
         <i class="fas fa-user-edit"></i>
       </a></td>
-      <td><a href="deleta_curso.php?id_curso=<?php echo $linha['id_curso']; ?>">
+      <td><a href="models/deleta_curso.php?id_curso=<?php echo $linha['id_curso']; ?>">
         <i class="fas fa-trash"></i>
       </a></td>
       <td><a>
