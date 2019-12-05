@@ -16,6 +16,11 @@ $consulta_aluno = mysqli_query($conexao, $query);
 $query = "SELECT * FROM professor";
 $consulta_professor = mysqli_query($conexao, $query);
 
+$query = "SELECT  professor.nome_professor, curso.id_curso
+          FROM professor, curso
+          WHERE curso.id_professor = professor.id_professor";
+$consulta_professor_curso = mysqli_query($conexao, $query);
+
 $query = "SELECT aluno_curso.id_aluno_curso, aluno.nome_aluno, curso.nome_curso
           FROM aluno, curso, aluno_curso
           WHERE aluno_curso.id_aluno = aluno.id_aluno

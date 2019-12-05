@@ -5,7 +5,6 @@
       <th>Carga horária</th>
       <th>Editar</th>
       <th>Deletar</th>
-      <th>Visualizar</th>
     </tr>
   </thead>
 
@@ -18,11 +17,8 @@
       <td><a href="?pagina=inserir_curso&editar=<?php echo $linha['id_curso']; ?>">
         <i class="fas fa-user-edit"></i>
       </a></td>
-      <td><a href="models/deleta_curso.php?id_curso=<?php echo $linha['id_curso']; ?>">
+      <td><a href="deleta_curso.php?id_curso=<?php echo $linha['id_curso']; ?>">
         <i class="fas fa-trash"></i>
-      </a></td>
-      <td><a>
-        <i class="fas fa-eye"></i>
       </a></td></tr>
     <?php
       }

@@ -1,7 +1,7 @@
 <h1>Inserir nova matrícula</h1>
 
 <br><br>
-<form method="post" action="models/processa_matricula.php">
+<form method="post" action="processa_matricula.php">
   <p>Selecione o aluno:</p>
   <select name="escolha_aluno" class="form-control">
     <option>Selecione um aluno</option>

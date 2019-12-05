@@ -24,7 +24,7 @@
   <?php while($linha = mysqli_fetch_array($consulta_professor)){ ?>
     <?php if($linha['id_professor'] == $_GET['editar']){ ?>
       <h1>Editar professor</h1>
-        <form method="post" action="models/edita_professor.php">
+        <form method="post" action="edita_professor.php">
           <input type="hidden" name="id_professor" value="<?php echo $linha['id_professor']; ?>">
           <br>
           <label>Nome do professor:</label>
