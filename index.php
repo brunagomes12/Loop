@@ -30,9 +30,6 @@ switch ($pagina) {
   case 'professor':
     include 'views/professor.php';
     break;
-  case 'quem_somos':
-    include 'views/quem_somos.php';
-    break;
   case 'matricula':
     include 'views/matricula.php';
     break;

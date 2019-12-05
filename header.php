@@ -13,10 +13,9 @@
     <div class="container">
       <a href="?pagina=home"><img src="image/logo_pequeno.png" title="Logo" alt="Logo">
       <div id="menu"></a>
-        <a href="?pagina=curso"> Cursos&Treinamentos</a>
+        <a href="?pagina=curso"> Courses&Training</a>
         <a href="?pagina=aluno">Alunos</a>
         <a href="?pagina=professor">Professores</a>
-        <a href="?pagina=quem_somos">Quem Somos</a>
         <a href="?pagina=matricula">Matrículas</a>
         <?php if (isset($_SESSION['login'])) { ?>
           <a href="logout.php"><?php echo $_SESSION['usuario']; ?> (sair)</a>
