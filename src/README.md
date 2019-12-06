@@ -27,5 +27,6 @@ Segurança:
 
 Padrões de commits:
 
-Os commits devem conter mensagens intuitivas, claras e objetivas. Deve ser bem evidenciado qual atividade tal commit contempla.
-Cada commit, deve contemplar somente uma atividade, pois quantos menores os commits, menos dependência entre eles e, caso necessite, mais fácil de reverter.
+- Os commits devem conter mensagens intuitivas, claras e objetivas. 
+- Deve ser bem evidenciado qual atividade tal commit contempla.
+- Cada commit deve contemplar somente uma atividade, pois quantos menores os commits, menos dependência entre eles e, caso necessite, mais fácil de reverter.
